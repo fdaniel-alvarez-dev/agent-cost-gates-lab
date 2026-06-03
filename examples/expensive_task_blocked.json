@@ -1,0 +1,16 @@
+{
+  "task_id": "expensive-task-blocked",
+  "budget": {
+    "max_cost_micros": 1000,
+    "max_tool_calls": 2
+  },
+  "steps": [
+    {
+      "tool": "deterministic_expensive_model",
+      "estimate_micros": 5000,
+      "input": {
+        "prompt": "This proposed call is intentionally over the deterministic budget."
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "task_id": "cheap-task",
+  "budget": {
+    "max_cost_micros": 3000,
+    "max_tool_calls": 3
+  },
+  "steps": [
+    {
+      "tool": "local_lookup",
+      "estimate_micros": 500,
+      "input": {
+        "query": "local policy note"
+      }
+    },
+    {
+      "tool": "local_summary",
+      "estimate_micros": 700,
+      "input": {
+        "text": "A deterministic local summary step for a low-cost task.",
+        "max_chars": 40
+      }
+    }
+  ]
+}

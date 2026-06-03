@@ -1,0 +1,21 @@
+{
+  "task_id": "fallback-triggered",
+  "budget": {
+    "max_cost_micros": 1200,
+    "max_tool_calls": 2
+  },
+  "fallback_policy": {
+    "fallback_tool": "local_fallback_summary",
+    "fallback_estimate_micros": 300
+  },
+  "steps": [
+    {
+      "tool": "deterministic_expensive_model",
+      "estimate_micros": 2500,
+      "input": {
+        "prompt": "Primary proposal is blocked; deterministic fallback should run.",
+        "text": "Primary proposal is blocked; deterministic fallback should run."
+      }
+    }
+  ]
+}
