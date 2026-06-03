@@ -1,8 +1,7 @@
 # Cost Gates for AI Agents
 
-This repository is a small, production-oriented reference implementation for:
-
-**A3: Cost Gates for AI Agents: The Architecture Pattern We Needed Before Scaling Tool Calls**
+This repository is a small, production-oriented reference implementation for cost gates in
+AI agent tool-call orchestration.
 
 It demonstrates an offline, deterministic architecture pattern for controlling agent tool calls before execution:
 

@@ -9,7 +9,7 @@ description = "Offline deterministic cost gates for AI agent tool-call orchestra
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
-authors = [{ name = "Andela A3 Lab" }]
+authors = [{ name = "Daniel Alvarez" }]
 dependencies = []
 
 [project.optional-dependencies]
