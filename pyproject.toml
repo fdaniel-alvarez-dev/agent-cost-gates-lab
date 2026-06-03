@@ -12,6 +12,12 @@ license = { text = "MIT" }
 authors = [{ name = "Andela A3 Lab" }]
 dependencies = []
 
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.5",
+]
+
 [project.scripts]
 agent-cost-gates = "cost_gates.cli:main"
 
